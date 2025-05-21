@@ -1,0 +1,195 @@
+{
+	"info": {
+		"_postman_id": "0566415e-e371-405d-98a8-8f652a9b3e57",
+		"name": "LostItems",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43161047"
+	},
+	"item": [
+		{
+			"name": "/lostItems",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/lostItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/lostItems/{id}",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/lostItems/10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/lostItems/found/true",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/lostItems/found/true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems",
+						"found",
+						"true"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/lostItems/found/false",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/lostItems/found/false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems",
+						"found",
+						"false"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/lostItems",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Gesù\",\r\n    \"description\" : \"un coglione\",\r\n    \"lost_date\" : \"2000-10-10\",\r\n    \"location\" : \"Sammi\",\r\n    \"found\" : \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/lostItems",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9090/lostItems/id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"name\" : \"prova\",\r\n    \"description\" : \"prova\",\r\n    \"lost_date\" : \"2000-10-10\",\r\n    \"location\" : \"prova\",\r\n    \"found\" : \"true\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/lostItems/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems",
+						"16"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/lostItems",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n    {\r\n        \"name\" : \"Vergine Pura e Libera da qualsivoglia peccato\",\r\n        \"description\" : \"Minuta donna dal candido aspetto\",\r\n        \"lost_date\" : \"2020-05-10\",\r\n        \"location\" : \"Gerusalemme\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/lostItems/23",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"lostItems",
+						"23"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
